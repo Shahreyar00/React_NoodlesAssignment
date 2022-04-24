@@ -1,0 +1,134 @@
+.home__container{
+    width: 100%;
+    
+    .home__wrapper{
+        .topbar{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 60px;
+            background: #6441A5;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #2a0845, #6441A5);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #2a0845, #6441A5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            color: white;
+        }
+
+        .subTopbar{
+            display: flex;
+            justify-content: space-evenly;
+            background: #6441A5;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #2a0845, #6441A5);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #2a0845, #6441A5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            
+            padding-top: 5px;
+            padding-bottom: 10px;
+
+            @media screen and (max-width:900px){
+                flex-direction: column;
+            }
+
+            .filter{
+                flex: 1;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                margin-right: 20px;
+                width: 100%;
+
+                @media screen and (max-width:900px){
+                    justify-content: center;
+                    margin: 5px 0px;
+                }
+
+                .filter__wrapper{
+                    width: 280px;
+                    border-radius: 10px;
+                    background: #6441A5;  /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to right, #2a0845, #6441A5);  /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to right, #2a0845, #6441A5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                    box-shadow: 0 0 15px #130b27;
+                    backdrop-filter: blur(15px);
+                    padding: 5px 10px;
+                    display: flex;
+
+                    .filterText{
+                        font-size: 20px;
+                        font-weight: 500;
+                        color: white;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    .rtf{
+                        padding: 0px 5px;
+                    }
+
+                    select{
+                        padding: 10px;
+                        border-radius: 10px;
+                        outline: none;
+                        width: 70%;
+    
+                        option{
+                            border-radius: 10px;
+                            background-color: var(--primary-color);
+                        }
+                    }
+                }
+            }
+
+            .search{
+                flex: 1;
+                margin-left: 20px;
+
+                @media screen and (max-width:900px){
+                    display: flex;
+                    justify-content: center;
+                    margin: 5px 0px;
+                }
+                
+                .search__wrapper{
+                    height: 100%;
+                    width: 280px;
+                    display: flex;
+                    padding: 5px 10px;
+                    align-items: center;
+                    background: #6441A5;  /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to right, #2a0845, #6441A5);  /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to right, #2a0845, #6441A5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                    box-shadow: 0 0 15px #130b27;
+                    backdrop-filter: blur(15px);
+                    border-radius: 10px;
+
+                    .search-icon{
+                        font-size: 22px;
+                        margin-right: 10px;
+                        color: white;
+                    }
+
+                    input{
+                        height: 35px;
+                        width: 100%;
+                        padding: 5px 10px;
+                        border-radius: 10px;
+                        border: none;
+                        outline: none;
+                        font-size: 16px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+        .body{
+            padding: 50px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            background: #6441A5;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #2a0845, #6441A5);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #2a0845, #6441A5); 
+        }
+    }
+}
