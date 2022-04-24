@@ -25,7 +25,6 @@ const Home = () => {
         getProducts();
     },[]);
 
-    console.log(products);
 
 
     useEffect(()=>{
@@ -54,7 +53,7 @@ const Home = () => {
         getImage();
     },[]);
 
-    console.log(imagePath[Math.floor(Math.random()*7)]);
+    
 
     return (
         <div className="home__container">
